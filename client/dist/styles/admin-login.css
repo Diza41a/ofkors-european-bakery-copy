@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Neucha", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
+}
+
+@keyframes scaleEl {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+@keyframes rotateEl {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(0.65deg);
+  }
+  to {
+    transform: rotate(-0.65deg);
+  }
+}
+@keyframes rotateElOpposite {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-0.65deg);
+  }
+  to {
+    transform: rotate(0.65deg);
+  }
+}
+/* background bubbles */
+.bubbles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: rise 10s infinite ease-in;
+  z-index: -1;
+}
+
+.bubble:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 18s;
+}
+
+.bubble:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 11s;
+}
+
+.bubble:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 17s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 21s;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(5) {
+  width: 35px;
+  height: 35px;
+  left: 55%;
+  animation-duration: 16s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(6) {
+  width: 45px;
+  height: 45px;
+  left: 65%;
+  animation-duration: 18s;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(7) {
+  width: 90px;
+  height: 90px;
+  left: 70%;
+  animation-duration: 22s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(8) {
+  width: 25px;
+  height: 25px;
+  left: 80%;
+  animation-duration: 16s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(9) {
+  width: 15px;
+  height: 15px;
+  left: 70%;
+  animation-duration: 15s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(10) {
+  width: 90px;
+  height: 90px;
+  left: 25%;
+  animation-duration: 20s;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(3n) {
+  border: 0.5vw #949594 solid;
+  background: none;
+}
+
+@keyframes rise {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translate(100px);
+  }
+  100% {
+    bottom: 1080px;
+    transform: translateX(-200px);
+  }
+}
+/*  */
+#root .admin-login-section {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+#root .admin-login-section .login-section-wrap {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../assets/images/croissant.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#root .admin-login-section .login-section-wrap .login-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(41, 40, 39, 0.75);
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#root .admin-login-section .login-section-wrap .login-section #back-to-main-btn {
+  font-family: "Dosis", "Poiret One", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: #EDE9D5;
+  position: absolute;
+  top: 1%;
+  left: 2%;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form {
+  width: 90%;
+  max-width: 673px;
+  background: linear-gradient(0deg, #292827 20%, rgba(53, 53, 53, 0.715));
+  border: 0.8px solid #5B3A36;
+  border-radius: 8px;
+  color: #EDE9D5;
+  display: flex;
+  flex-direction: column;
+  justify-items: space-evenly;
+  align-items: center;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form .title {
+  font-family: "Antic", "Montserrat", sans-serif;
+  font-size: 36px;
+  margin: 2.5vh 0;
+  color: rgb(251, 251, 251);
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form label {
+  margin: 1.5vh 0;
+  width: 80%;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form label .label-text-wrap {
+  position: relative;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form label .label-text-wrap span {
+  font-family: "Dosis", "Poiret One", sans-serif;
+  font-size: 24px;
+  color: #EDE9D5;
+  margin-left: 52px;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form label .label-text-wrap .icon {
+  position: absolute;
+  top: -3.2px;
+  left: 6.4px;
+  font-size: 24px;
+  color: #EDE9D5;
+  background-color: #462521;
+  padding: 8.8px 9.6px;
+  border-radius: 50%;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form label .label-text-wrap .icon.eye {
+  cursor: pointer;
+  padding: 8.8px 7.2px;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form label .label-text-wrap .icon.show-password {
+  border: 1px solid #462521;
+  background-color: #EDE9D5;
+  color: #462521;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form label input {
+  width: calc(100% - 48px);
+  font-family: "Dosis", "Poiret One", sans-serif;
+  font-size: 21.6px;
+  background-color: #EDE9D5;
+  box-shadow: 0 0 0.5vw 0.015vw inset rgba(50, 50, 50, 0.748);
+  outline-color: #FF9A23;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 24px;
+  display: block;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form #password-mail-btn {
+  margin-left: 12.5%;
+  align-self: flex-start;
+  margin-top: 2vh;
+  font-family: "Antic", "Montserrat", sans-serif;
+  font-size: 23.2px;
+  color: #EDE9D5;
+  text-decoration: underline;
+  border: none;
+  background: none;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form #password-mail-btn:hover {
+  color: #FF9A23;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form #tooltip {
+  margin-left: 12.5%;
+  align-self: flex-start;
+  margin-top: 2vh;
+  font-family: "Antic", "Montserrat", sans-serif;
+  font-size: 23.2px;
+  color: #EDE9D5;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form .submit-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form .submit-wrap #reach-out-submit-btn {
+  align-self: flex-end;
+  width: 25%;
+  margin: 3vh 4vw;
+  padding: 1.35vh 1.25vw 0.95vh 1.25vw;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 21.6px;
+  color: #EDE9D5;
+  background-color: #5B3A36;
+  border: none;
+  box-shadow: -5.6px 4px 0 0.1vw rgba(70, 37, 33, 0.75);
+  cursor: pointer;
+  animation: scaleEl 1s ease-in-out infinite alternate;
+}
+#root .admin-login-section .login-section-wrap .login-section #admin-login-form .submit-wrap #reach-out-submit-btn:hover {
+  background-color: #FF9A23;
+  color: #462521;
+  transition: background-color 1s;
+}
+
+@media (min-width: 855px) {
+  #root .admin-login-section .login-section-wrap .login-section #back-to-main-btn {
+    font-size: 32px;
+  }
+  #root .admin-login-section .login-section-wrap .login-section #admin-login-form {
+    width: 55%;
+    box-shadow: -16px 16px 0.25vw 0.5vw rgba(36, 33, 31, 0.776);
+  }
+  #root .admin-login-section .login-section-wrap .login-section #admin-login-form .title {
+    font-size: 40px;
+  }
+  #root .admin-login-section .login-section-wrap .login-section #admin-login-form label .label-text-wrap {
+    position: relative;
+  }
+  #root .admin-login-section .login-section-wrap .login-section #admin-login-form label .label-text-wrap span {
+    margin-left: 72px;
+    font-size: 28px;
+  }
+  #root .admin-login-section .login-section-wrap .login-section #admin-login-form label .label-text-wrap .icon {
+    top: -4.8px;
+    left: 11.2px;
+    font-size: 28px;
+    padding: 12px 13.6px;
+  }
+  #root .admin-login-section .login-section-wrap .login-section #admin-login-form label .label-text-wrap .icon.eye {
+    cursor: pointer;
+    padding: 12px 10.4px;
+  }
+  #root .admin-login-section .login-section-wrap .login-section #admin-login-form label input {
+    font-size: 28px;
+  }
+  #root .admin-login-section .login-section-wrap .login-section #admin-login-form label input[type=password] {
+    font-family: Verdana;
+    font-size: 28.8px;
+    letter-spacing: 0.125em;
+  }
+}
+
+/*# sourceMappingURL=admin-login.css.map */

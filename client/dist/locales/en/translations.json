@@ -1,0 +1,69 @@
+{
+  "header": {
+    "about": "About Us",
+    "menu": "Menu",
+    "contact": "Reach Out",
+    "admin": "Admin Dashboard"
+  },
+  "landing": {
+    "menu-btn": "To Menu",
+    "offers": "offers",
+    "dine-in": "Dine-In/Take-Out",
+    "quality": "Quality Eastern European Pastries",
+    "desserts": "Artisan Desserts and More...",
+    "doordash": "Order now Using DoorDash"
+  },
+  "about": {
+    "hero": "About Us",
+    "story-header-our": "Our",
+    "story-header-story": "Story",
+    "snippets": "Social Media Snippets...",
+    "refresh": "Refresh Media"
+  },
+  "menu": {
+    "hero": "Menu",
+    "categories": "Categories "
+  },
+  "reach-out": {
+    "hero": "Reach Out",
+    "form": {
+      "name": "Name",
+      "phone": "Cell Number",
+      "email": "Email",
+      "message": "Your Message",
+      "submit": "submit"
+    },
+    "submitted": "Question submitted",
+    "required": "Required field",
+    "required-placeholder": "Fill-in the required fields",
+    "required-contact": "show at least one valid contact method",
+    "required-contact-placeholder": "Phone or Email required"
+  },
+  "footer": {
+    "titles": {
+      "address": "Address",
+      "locations": "Locations",
+      "contact": "Quick Contact",
+      "hours": "Hours of Operation"
+    },
+    "subtitles": {
+      "this": "Bee Ridge",
+      "downtown": "Downtown",
+      "email": "Email",
+      "phone": "Phone Number",
+      "downtown-link": "Downtown Website",
+      "week-days": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+      },
+      "special-days": {
+        "closed": "closed"
+      }
+    }
+  }
+}

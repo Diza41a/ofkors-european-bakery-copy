@@ -1,0 +1,69 @@
+{
+  "header": {
+    "about": "О Нас",
+    "menu": "Меню",
+    "contact": "Связаться",
+    "admin": "Доска Админа"
+  },
+  "landing": {
+    "menu-btn": "К Меню",
+    "offers": "предлагает",
+    "dine-in": "Еду Внутри/На Вынос",
+    "quality": "Качественную Славянско-Европейскую Выпечку",
+    "desserts": "Лакомые Десерты и Больше...",
+    "doordash": "Закажите через DoorDash"
+  },
+  "about": {
+    "hero": "О Нас",
+    "story-header-our": "Наша",
+    "story-header-story": "История",
+    "snippets": "Нарезки из Соцсетей...",
+    "refresh": "Обновить Вид"
+  },
+  "menu": {
+    "hero": "Меню",
+    "categories": "Категории "
+  },
+  "reach-out": {
+    "hero": "Связаться",
+    "form": {
+      "name": " Имя",
+      "phone": " Телефон",
+      "email": " Имейл",
+      "message": " Ваше Сообщение",
+      "submit": " отправить"
+    },
+    "submitted": "Вопрос отправлен",
+    "required": "Обязательное поле",
+    "required-placeholder": "Заполните требуемые поля",
+    "required-contact": "укажите один рабочий метод обратной связи",
+    "required-contact-placeholder": "Укажите Телефон или Имейл"
+  },
+  "footer": {
+    "titles": {
+      "address": "Адрес",
+      "locations": "Локации",
+      "contact": "Быстрая Связь",
+      "hours": "Часы Работы"
+    },
+    "subtitles": {
+      "this": "Би Ридж",
+      "downtown": "Центр",
+      "email": "Имейл",
+      "phone": "Телефонный Номер",
+      "downtown-link": "Вебсайт Центра",
+      "week-days": {
+        "monday": "Понедельник",
+        "tuesday": "Втроник",
+        "wednesday": "Среда",
+        "thursday": "Четверг",
+        "friday": "Пятница",
+        "saturday": "Суббота",
+        "sunday": "Воскресенье"
+      },
+      "special-days": {
+        "closed": "закрыто"
+      }
+    }
+  }
+}

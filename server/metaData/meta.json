@@ -1,0 +1,163 @@
+{
+	"contact": {
+		"phone": "(941)552-9717",
+		"email": "BlackSea41a@gmail.com",
+		"facebook": "https://www.facebook.com/OfKors-Bakery-on-Cattlemen-138007417031393/",
+		"instagram": "https://www.instagram.com/ofkors_bakery/"
+	},
+	"heroes": [
+		{
+			"new": false,
+			"name": "Butter Croissant",
+			"imageUrl": "https://i.imgur.com/QQobATJ.jpg",
+			"translations": {
+				"ru": {
+					"name": "Сливочный круассан"
+				},
+				"uk": {
+					"name": "Масляний круасан"
+				}
+			}
+		},
+		{
+			"new": false,
+			"name": "Spartak Cake",
+			"imageUrl": "https://i.imgur.com/DdQbCsW.png",
+			"translations": {
+				"ru": {
+					"name": "Торт Спартак"
+				},
+				"uk": {
+					"name": "Торт Спартак"
+				}
+			}
+		},
+		{
+			"new": false,
+			"name": "Butter Croissant",
+			"imageUrl": "https://i.imgur.com/QQobATJ.jpg",
+			"translations": {
+				"ru": {
+					"name": "Сливочный круассан"
+				},
+				"uk": {
+					"name": "Масляний круасан"
+				}
+			}
+		},
+		{
+			"new": false,
+			"name": "Spartak Cake",
+			"imageUrl": "https://i.imgur.com/DdQbCsW.png",
+			"translations": {
+				"ru": {
+					"name": "Торт Спартак"
+				},
+				"uk": {
+					"name": "Торт Спартак"
+				}
+			}
+		},
+		{
+			"new": false,
+			"name": "Butter Croissant",
+			"imageUrl": "https://i.imgur.com/QQobATJ.jpg",
+			"translations": {
+				"ru": {
+					"name": "Сливочный круассан"
+				},
+				"uk": {
+					"name": "Масляний круасан"
+				}
+			}
+		}
+	],
+	"hours": {
+		"monday": {
+			"from": {
+				"hour": 8,
+				"minute": 5
+			},
+			"to": {
+				"hour": 5,
+				"minute": 5
+			},
+			"closed": false
+		},
+		"tuesday": {
+			"from": {
+				"hour": 8,
+				"minute": 5
+			},
+			"to": {
+				"hour": 5,
+				"minute": 5
+			},
+			"closed": false
+		},
+		"wednesday": {
+			"from": {
+				"hour": 8,
+				"minute": 5
+			},
+			"to": {
+				"hour": 5,
+				"minute": 5
+			},
+			"closed": false
+		},
+		"thursday": {
+			"from": {
+				"hour": 8,
+				"minute": 5
+			},
+			"to": {
+				"hour": 5,
+				"minute": 5
+			},
+			"closed": false
+		},
+		"friday": {
+			"from": {
+				"hour": 8,
+				"minute": 5
+			},
+			"to": {
+				"hour": 5,
+				"minute": 5
+			},
+			"closed": false
+		},
+		"saturday": {
+			"from": {
+				"hour": 8,
+				"minute": 5
+			},
+			"to": {
+				"hour": 5,
+				"minute": 5
+			},
+			"closed": false
+		},
+		"sunday": {
+			"from": {
+				"hour": 8,
+				"minute": 5
+			},
+			"to": {
+				"hour": 5,
+				"minute": 5
+			},
+			"closed": true
+		}
+	},
+	"story": {
+		"hero1Url": "https://thumbs.dreamstime.com/b/happy-loving-couple-bakers-standing-bakery-holding-bread-photo-looking-aside-92706350.jpg",
+		"hero2Url": "https://envato-shoebox-0.imgix.net/48be/5a43-05ff-418a-b5fe-1efc8673f84f/0C7A6193.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=e92c7308afa83848e4668d230d1d1ff4",
+		"text": {
+			"en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada nunc vel risus commodo viverra maecenas accumsan. Maecenas ultricies mi eget mauris. Purus faucibus ornare suspendisse sed nisi lacus sed viverra. Sit amet volutpat consequat mauris nunc. Amet commodo nulla facilisi nullam vehicula. Sed felis eget velit aliquet sagittis id consectetur. Fringilla est ullamcorper eget nulla facilisi. At in tellus integer feugiat scelerisque varius morbi enim. Lacus vel facilisis volutpat est. Tempus quam pellentesque nec nam aliquam sem. Aliquet bibendum enim facilisis gravida neque convallis a.",
+			"ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada nunc vel risus commodo viverra maecenas accumsan. Maecenas ultricies mi eget mauris. Purus faucibus ornare suspendisse sed nisi lacus sed viverra. Sit amet volutpat consequat mauris nunc. Amet commodo nulla facilisi nullam vehicula. Sed felis eget velit aliquet sagittis id consectetur. Fringilla est ullamcorper eget nulla facilisi.",
+			"uk": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada nunc vel risus commodo viverra maecenas accumsan. Maecenas ultricies mi eget mauris. Purus faucibus ornare suspendisse sed nisi lacus sed viverra. Sit amet volutpat consequat mauris nunc."
+		}
+	}
+}

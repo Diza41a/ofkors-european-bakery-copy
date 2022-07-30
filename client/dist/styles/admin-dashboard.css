@@ -1,0 +1,814 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Neucha", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
+}
+
+@keyframes scaleEl {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+@keyframes rotateEl {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(0.65deg);
+  }
+  to {
+    transform: rotate(-0.65deg);
+  }
+}
+@keyframes rotateElOpposite {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-0.65deg);
+  }
+  to {
+    transform: rotate(0.65deg);
+  }
+}
+.dashboard-bubbles .bubbles {
+  background-image: url(../assets/images/croissant.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.admin-dashboard {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: rgba(41, 40, 39, 0.75);
+}
+.admin-dashboard .hidden {
+  display: none;
+}
+.admin-dashboard .nav {
+  position: fixed;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  background: rgba(41, 40, 39, 0.9);
+  padding-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin-dashboard .nav.hidden {
+  display: none;
+}
+.admin-dashboard .nav .logo-wrap {
+  border-radius: 12px;
+  background-color: #EDE9D5;
+  padding: 0 14.4px;
+}
+.admin-dashboard .nav .logo-wrap .logo {
+  border-radius: 12px;
+  height: 64px;
+  padding: 2%;
+  background-image: url(../assets/images/logo-bee-ridge.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.admin-dashboard .nav .logo-wrap {
+  margin: 0 auto;
+  width: 50vw;
+}
+.admin-dashboard .nav .logo-wrap .logo {
+  max-height: 11vh;
+}
+.admin-dashboard .nav button {
+  font-family: "Antic", "Montserrat", sans-serif;
+}
+.admin-dashboard .nav .nav-btn {
+  text-decoration: none;
+  text-align: center;
+  background-color: #292827;
+  font-size: 40px;
+  color: #EDE9D5;
+  text-shadow: -1.6px 1.2px 0 rgb(184, 82, 27);
+  margin: 3vh 2vw;
+  padding: 1.75vh 1vh;
+  width: 80%;
+  border: 1vw double #EDE9D5;
+  position: relative;
+}
+.admin-dashboard .nav .nav-btn span {
+  position: absolute;
+  top: 7%;
+  left: 12.5%;
+  font-size: 64px;
+  transform: rotate(12deg);
+  text-shadow: -1.6px 1.2px 0 rgb(184, 82, 27);
+}
+.admin-dashboard .nav .nav-btn i {
+  font-size: 32px;
+  text-shadow: none;
+  position: absolute;
+  left: 5%;
+}
+.admin-dashboard .nav .nav-btn:hover {
+  background-color: #FF9A23;
+  transition: background-color 1s;
+}
+.admin-dashboard .nav .nav-btn:nth-child(2) {
+  margin-top: 20%;
+}
+.admin-dashboard .nav .nav-btn:nth-child(2n) {
+  animation: rotateElOpposite 3s ease-in-out infinite alternate;
+}
+.admin-dashboard .nav .nav-btn:nth-child(2n-1) {
+  animation: rotateEl 3s ease-in-out infinite alternate;
+}
+.admin-dashboard .nav .nav-btn:nth-child(5) {
+  animation: none;
+}
+.admin-dashboard .nav .nav-btn.disabled {
+  animation: none;
+  background: none;
+  border: none;
+  color: rgb(159, 159, 159);
+  cursor: default;
+}
+.admin-dashboard .nav .nav-btn.logout-btn {
+  margin-left: 15vw;
+  width: 70vw;
+  background-color: #FF9A23;
+  color: #EDE9D5;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+.admin-dashboard .nav #burger-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 32px;
+  color: #EDE9D5;
+  border: none;
+  padding: 4px 12px;
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+.admin-dashboard .nav #burger-close-btn:hover {
+  background-color: #5B3A36;
+  transition: background-color 0.5s;
+}
+.admin-dashboard .questions-section {
+  color: #EDE9D5;
+  font-family: "Antic", "Montserrat", sans-serif;
+}
+.admin-dashboard .questions-section .title {
+  background-color: black;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Antic", "Montserrat", sans-serif;
+  padding: 1.5vh 0;
+}
+.admin-dashboard .questions-section .questions-subsection .title {
+  font-size: 20px;
+}
+.admin-dashboard .questions-section .questions-subsection .questions-list {
+  list-style: none;
+}
+.admin-dashboard .questions-section .questions-subsection .questions-list .question {
+  width: 90%;
+  margin: 2.5vh 0;
+  border-radius: 0 8px 8px 0;
+  color: #292827;
+  background-color: rgba(237, 233, 213, 0.9);
+  padding: 1vh 1vw;
+  padding-bottom: 32px;
+  position: relative;
+}
+.admin-dashboard .questions-section .questions-subsection .questions-list .question > * {
+  margin: 8px;
+}
+.admin-dashboard .questions-section .questions-subsection .questions-list .question .bold {
+  font-family: "Antic", "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.admin-dashboard .questions-section .questions-subsection .questions-list .question .bold .regular {
+  font-family: "Antic", "Montserrat", sans-serif;
+  font-size: 18.4px;
+}
+.admin-dashboard .questions-section .questions-subsection .questions-list .question .regular {
+  font-family: "Antic", "Montserrat", sans-serif;
+  font-size: 18.4px;
+}
+.admin-dashboard .questions-section .questions-subsection .questions-list .question .resolve-btn {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #EDE9D5;
+  background-color: #FF9A23;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.admin-dashboard .questions-section .questions-subsection .questions-list .question .close-btn {
+  font-size: 24px;
+  color: #EDE9D5;
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  padding: 4px 9.6px 1.6px 9.6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.admin-dashboard form {
+  margin: 0 2vw;
+}
+.admin-dashboard .menu-section {
+  color: #EDE9D5;
+  font-family: "Antic", "Montserrat", sans-serif;
+}
+.admin-dashboard .menu-section .title {
+  background-color: black;
+  font-family: "Antic", "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  padding: 1.5vh 0;
+}
+.admin-dashboard .menu-section .form-wrap {
+  margin-bottom: 2vh;
+}
+.admin-dashboard .menu-section .form-wrap .title {
+  font-size: 20px;
+}
+.admin-dashboard .menu-section .form-wrap form {
+  color: #292827;
+  background-color: rgba(237, 233, 213, 0.9);
+  border-radius: 0 0 13.6px 13.6px;
+  padding: 1vh 2vw;
+}
+.admin-dashboard .menu-section .form-wrap form label {
+  font-family: "Antic", "Montserrat", sans-serif;
+  font-size: 18.4px;
+  display: block;
+  max-width: 25vw;
+}
+.admin-dashboard .menu-section .form-wrap form input, .admin-dashboard .menu-section .form-wrap form textarea {
+  font-family: "Antic", "Montserrat", sans-serif;
+  font-size: 18.4px;
+  outline-color: #FF9A23;
+}
+.admin-dashboard .menu-section .form-wrap form #new-item-btn {
+  border-radius: 4px;
+  padding: 4.8px 16px;
+  font-size: 20.8px;
+  border: none;
+  color: #EDE9D5;
+  background-color: #FF9A23;
+  width: 25%;
+  margin-top: 2vh;
+  margin-left: 70%;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap {
+  background-size: cover;
+  background-attachment: fixed;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .title {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(255, 154, 35, 0.95);
+  font-size: 24px;
+  color: #EDE9D5;
+  padding: 1vh 0;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards {
+  padding: 3vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card {
+  background: rgba(41, 40, 39, 0.75);
+  margin: 3vh 1vw;
+  padding: 15px 15px;
+  width: 275px;
+  height: 350px;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: transform 0.25s;
+  cursor: pointer;
+  position: relative;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card > * {
+  flex-basis: 50%;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .img {
+  flex-basis: 100%;
+  background-image: url(../assets/images/card-placeholder.png);
+  background-size: cover;
+  margin: auto;
+  width: 250px;
+  height: 200px;
+  box-shadow: 0 0 15px 1px rgba(255, 154, 35, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .img .card-description-wrap-admin {
+  height: 55%;
+  background-color: rgba(41, 40, 39, 0.75);
+  border-radius: 4px;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  overflow-y: none;
+  /* Width */
+  /* Track */
+  /* Handle */
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .img .card-description-wrap-admin::-webkit-scrollbar {
+  width: 4px;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .img .card-description-wrap-admin::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0.2vw 0.2vw 0 0;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .img .card-description-wrap-admin::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 1vw;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .img .card-description-wrap-admin .card-description {
+  height: 100%;
+  font-family: "Antic", "Montserrat", sans-serif;
+  font-size: 19.2px;
+  color: #EDE9D5;
+  background-color: transparent;
+  border: 1.5px solid #EDE9D5;
+  border-radius: 1.6px;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .img .card-description-wrap-admin .card-description::placeholder {
+  color: rgba(237, 233, 213, 0.8);
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .meta-info {
+  margin-top: 15px;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .meta-info input {
+  font-family: "Dosis", "Poiret One", sans-serif;
+  font-size: 24px;
+  background-color: transparent;
+  color: #EDE9D5;
+  border: 1.5px solid #EDE9D5;
+  border-radius: 1.6px;
+  margin-bottom: 5%;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .meta-info input.imageUrl {
+  width: 95%;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .meta-info input::placeholder {
+  color: rgba(237, 233, 213, 0.8);
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .meta-info input.price {
+  margin-top: 5%;
+  max-width: 25%;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .meta-info p {
+  margin-top: 5px;
+  font-size: 30px;
+  max-width: 150px;
+  line-height: 1;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .meta-info .row {
+  display: flex;
+  justify-content: space-between;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .meta-info .row .info-toggle {
+  font-size: 22px;
+  text-align: right;
+  border-radius: 50%;
+  padding: 4px 12px 6px 12px;
+  margin-right: 12.5px;
+  border: 1px solid #EDE9D5;
+  cursor: pointer;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .meta-info .row .info-toggle:hover {
+  background-color: #EDE9D5;
+  color: #462521;
+  border-color: #462521;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card .delete-item-btn {
+  font-size: 26.4px;
+  color: #EDE9D5;
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  padding: 5.6px 10.4px 0 10.4px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card button.update-item-btn {
+  color: #EDE9D5;
+  background-color: rgb(67, 116, 248);
+  border: none;
+  border-radius: 50%;
+  padding: 7.2px 8px;
+  position: absolute;
+  top: -8px;
+  right: 40px;
+}
+.admin-dashboard .menu-section .menu-body-admin .menu-wrap .menu .subsection .item-cards .card button.update-item-btn .icon {
+  font-size: 21.6px;
+}
+.admin-dashboard .fixed-data-section {
+  color: #EDE9D5;
+  font-family: "Antic", "Montserrat", sans-serif;
+}
+.admin-dashboard .fixed-data-section .title {
+  background-color: black;
+  font-family: "Antic", "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  padding: 1.5vh 0;
+}
+.admin-dashboard .fixed-data-section form {
+  color: #292827;
+  padding: 1.5vh 2vw;
+  margin-top: 1.5vh;
+  background-color: #EDE9D5;
+  border-radius: 13.6px 13.6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.admin-dashboard .fixed-data-section form .landing-hero-wrap {
+  text-align: center;
+  margin: 1vh 0;
+}
+.admin-dashboard .fixed-data-section form .landing-hero-wrap input {
+  font-family: "Antic", "Montserrat", sans-serif;
+  font-size: 21.6px !important;
+}
+.admin-dashboard .fixed-data-section form .landing-hero-wrap label, .admin-dashboard .fixed-data-section form .landing-hero-wrap p, .admin-dashboard .fixed-data-section form .landing-hero-wrap span {
+  color: #292827;
+  font-size: 21.6px !important;
+}
+.admin-dashboard .fixed-data-section form input {
+  font-size: 21.6px !important;
+}
+.admin-dashboard .fixed-data-section form input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.admin-dashboard .fixed-data-section form label, .admin-dashboard .fixed-data-section form p, .admin-dashboard .fixed-data-section form span, .admin-dashboard .fixed-data-section form input {
+  font-family: "Antic", "Montserrat", sans-serif !important;
+  font-size: 21.6px !important;
+}
+.admin-dashboard .fixed-data-section form p, .admin-dashboard .fixed-data-section form span {
+  margin: 0.5vh 0;
+}
+.admin-dashboard .fixed-data-section form .new-status-wrap {
+  display: block;
+}
+.admin-dashboard .fixed-data-section form button {
+  width: 25%;
+  padding: 4.8px 16px;
+  margin: 1vh 0;
+  margin-left: 70%;
+  background-color: #FF9A23;
+  color: #EDE9D5;
+  border-radius: 4px;
+  border: none;
+  font-size: 23.2px;
+}
+.admin-dashboard .fixed-data-section form#operation-hours-form .day-section p, .admin-dashboard .fixed-data-section form#operation-hours-form .day-section input, .admin-dashboard .fixed-data-section form#operation-hours-form .day-section span {
+  font-family: "Antic", "Montserrat", sans-serif !important;
+}
+.admin-dashboard .fixed-data-section form#operation-hours-form .day-section .day {
+  text-transform: capitalize;
+  display: block;
+  font-family: "Antic", "Montserrat", sans-serif;
+}
+.admin-dashboard .fixed-data-section form#operation-hours-form .day-section .closed-status-wrap {
+  display: block;
+}
+.admin-dashboard #update-instagram {
+  width: 100%;
+  margin: 2vh 0;
+  padding: 4px 8px;
+  font-family: "Dosis", "Poiret One", sans-serif;
+  font-size: 28px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  box-shadow: 0 0 1vw 0.1vw #D8315B, 0 0 1vw 0.1vw #D8315B inset;
+  color: #EDE9D5;
+}
+.admin-dashboard #burger-btn {
+  color: #EDE9D5;
+  font-size: 32px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+@media (min-width: 800px) {
+  .admin-dashboard {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .admin-dashboard .nav {
+    flex-basis: 25%;
+    max-width: 25vw;
+    position: initial;
+    padding-top: 0;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .admin-dashboard .nav.hidden {
+    display: initial;
+  }
+  .admin-dashboard .nav .logo-wrap {
+    border-radius: 12px;
+    background-color: #EDE9D5;
+    padding: 0 14.4px;
+  }
+  .admin-dashboard .nav .logo-wrap .logo {
+    border-radius: 12px;
+    height: 72px;
+    padding: 2%;
+    background-image: url(../assets/images/logo-bee-ridge.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .admin-dashboard .nav .logo-wrap {
+    margin-top: 1.5vh !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0 auto;
+    width: 35%;
+  }
+  .admin-dashboard .nav .nav-btn {
+    background-color: #462521;
+    font-size: 29.6px;
+    color: #EDE9D5;
+    text-shadow: none;
+    margin: 1.75vh 0;
+    padding: 1.75vh 0;
+    width: 100%;
+    border: none;
+    position: relative;
+  }
+  .admin-dashboard .nav .nav-btn:hover {
+    background-color: #5B3A36;
+    transition: background-color 1s;
+  }
+  .admin-dashboard .nav .nav-btn:nth-child(2n) {
+    animation: none;
+  }
+  .admin-dashboard .nav .nav-btn:nth-child(2n-1) {
+    animation: none;
+  }
+  .admin-dashboard .nav .nav-btn:nth-child(5) {
+    animation: none;
+  }
+  .admin-dashboard .nav .nav-btn.selected {
+    background-color: #5B3A36;
+  }
+  .admin-dashboard .nav .nav-btn.logout-btn {
+    margin-left: 0;
+    width: 100%;
+    background-color: #FF9A23;
+    color: #EDE9D5;
+    bottom: 10%;
+    left: 0;
+  }
+  .admin-dashboard .nav #burger-close-btn {
+    display: none;
+  }
+  .admin-dashboard .dashboard-section {
+    height: 95vh;
+    max-height: 95vh;
+    overflow-y: auto;
+    margin-top: 5vh !important;
+    flex-basis: 60%;
+    margin: 0 auto;
+    background-color: rgba(41, 40, 39, 0.75);
+    /* Width */
+    /* Track */
+    /* Handle */
+  }
+  .admin-dashboard .dashboard-section .title {
+    background-color: transparent;
+    text-align: left;
+    font-size: 28.8px;
+    font-family: "Antic", "Montserrat", sans-serif;
+    padding: 1.5vh 2vw 0.5vh 2vw;
+  }
+  .admin-dashboard .dashboard-section hr {
+    width: 80%;
+    margin-left: 1.25vw;
+    height: 2.8px;
+    background-color: #EDE9D5;
+  }
+  .admin-dashboard .dashboard-section::-webkit-scrollbar {
+    width: 1.2vw;
+  }
+  .admin-dashboard .dashboard-section::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    background-color: #292827;
+  }
+  .admin-dashboard .dashboard-section::-webkit-scrollbar-thumb {
+    background-color: #462521;
+  }
+  .admin-dashboard .questions-section .questions-subsection .title {
+    margin-right: 3.5vw;
+    text-align: right;
+    font-size: 27.2px;
+  }
+  .admin-dashboard .questions-section .questions-subsection .questions-list .question {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    border-radius: 8px;
+    background-color: #EDE9D5;
+    position: relative;
+  }
+  .admin-dashboard .questions-section .questions-subsection .questions-list .question .bold {
+    font-size: 24px;
+  }
+  .admin-dashboard .questions-section .questions-subsection .questions-list .question .bold .regular {
+    font-size: 24px;
+  }
+  .admin-dashboard .questions-section .questions-subsection .questions-list .question .regular {
+    font-size: 22.4px;
+  }
+  .admin-dashboard .questions-section .questions-subsection .questions-list .question .resolve-btn {
+    font-size: 21.6px;
+    right: 0;
+    bottom: 0;
+  }
+  .admin-dashboard .questions-section .questions-subsection .questions-list .question .close-btn {
+    font-size: 24px;
+    color: #EDE9D5;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    padding: 4px 9.6px 1.6px 9.6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .admin-dashboard form {
+    margin: 0 2vw;
+  }
+  .admin-dashboard .menu-section {
+    color: #EDE9D5;
+    font-family: "Antic", "Montserrat", sans-serif;
+  }
+  .admin-dashboard .menu-section .form-wrap {
+    margin-bottom: 2vh;
+  }
+  .admin-dashboard .menu-section .form-wrap .title {
+    margin-right: 3.5vw;
+    margin-bottom: 1.5vh;
+    text-align: right;
+    font-size: 25.6px;
+  }
+  .admin-dashboard .menu-section .form-wrap form {
+    background-color: #EDE9D5;
+    border-radius: 13.6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .admin-dashboard .menu-section .form-wrap form label {
+    font-size: 21.6px;
+    display: initial;
+    max-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .admin-dashboard .menu-section .form-wrap form input, .admin-dashboard .menu-section .form-wrap form textarea {
+    max-width: 210px;
+    font-size: 21.6px;
+    outline-color: #FF9A23;
+    resize: none;
+  }
+  .admin-dashboard .menu-section .form-wrap form textarea {
+    width: 50em;
+    height: 3em;
+  }
+  .admin-dashboard .menu-section .form-wrap form #new-item-btn {
+    border-radius: 4px;
+    padding: 4.8px 16px;
+    font-size: 20.8px;
+    border: none;
+    color: #EDE9D5;
+    background-color: #FF9A23;
+    width: 25%;
+    margin-top: 2vh;
+    margin-left: 70%;
+  }
+  .admin-dashboard .menu-section .form-wrap form#our-story-form span, .admin-dashboard .menu-section .form-wrap form#our-story-form p, .admin-dashboard .menu-section .form-wrap form#our-story-form input, .admin-dashboard .menu-section .form-wrap form#our-story-form label {
+    font-family: "Antic", "Montserrat", sans-serif !important;
+  }
+  .admin-dashboard .fixed-data-section {
+    color: #EDE9D5;
+    font-family: "Antic", "Montserrat", sans-serif;
+  }
+  .admin-dashboard .fixed-data-section form .landing-hero-wrap {
+    text-align: center;
+    margin: 1vh 0;
+  }
+  .admin-dashboard .fixed-data-section form .landing-hero-wrap input {
+    font-family: "Antic", "Montserrat", sans-serif;
+    font-size: 15.2px;
+  }
+  .admin-dashboard .fixed-data-section form .landing-hero-wrap label, .admin-dashboard .fixed-data-section form .landing-hero-wrap p, .admin-dashboard .fixed-data-section form .landing-hero-wrap span, .admin-dashboard .fixed-data-section form .landing-hero-wrap textarea {
+    color: #292827;
+    font-family: "Antic", "Montserrat", sans-serif;
+    font-size: 15.2px;
+  }
+  .admin-dashboard .fixed-data-section form input {
+    font-family: "Antic", "Montserrat", sans-serif;
+    font-size: 15.2px;
+  }
+  .admin-dashboard .fixed-data-section form label, .admin-dashboard .fixed-data-section form p, .admin-dashboard .fixed-data-section form span {
+    color: #292827;
+    font-family: "Antic", "Montserrat", sans-serif;
+    font-size: 15.2px;
+  }
+  .admin-dashboard .fixed-data-section form textarea {
+    color: #292827;
+    font-family: "Antic", "Montserrat", sans-serif;
+    font-size: 20.8px;
+  }
+  .admin-dashboard .fixed-data-section form p, .admin-dashboard .fixed-data-section form span {
+    margin: 0.5vh 0;
+  }
+  .admin-dashboard .fixed-data-section form .new-status-wrap {
+    display: block;
+  }
+  .admin-dashboard .fixed-data-section form button {
+    width: 25%;
+    padding: 4.8px 16px;
+    margin: 1vh 0;
+    margin-left: 70%;
+    background-color: #FF9A23;
+    color: #EDE9D5;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+  }
+  .admin-dashboard .fixed-data-section form#operation-hours-form .day-section p, .admin-dashboard .fixed-data-section form#operation-hours-form .day-section input, .admin-dashboard .fixed-data-section form#operation-hours-form .day-section span {
+    font-family: "Antic", "Montserrat", sans-serif !important;
+  }
+  .admin-dashboard .fixed-data-section form#operation-hours-form .day-section .day {
+    text-transform: capitalize;
+    display: block;
+    font-family: "Antic", "Montserrat", sans-serif;
+  }
+  .admin-dashboard .fixed-data-section form#operation-hours-form .day-section .closed-status-wrap {
+    display: block;
+  }
+  .admin-dashboard #burger-btn {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=admin-dashboard.css.map */

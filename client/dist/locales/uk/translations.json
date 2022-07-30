@@ -1,0 +1,69 @@
+{
+  "header": {
+    "about": "Про Нас",
+    "menu": "Меню",
+    "contact": "Звязатися",
+    "admin": "Дошка Адміну"
+  },
+  "landing": {
+    "menu-btn": "До Меню",
+    "offers": "пропонує",
+    "dine-in": "Їжу На Місці/На Виніс",
+    "quality": "Якісну Слов'янсько-Європейську Випічку",
+    "desserts": "Ласощі Десерти і Більше...",
+    "doordash": "Замовте через DoorDash"
+  },
+  "about": {
+    "hero": "Про Нас",
+    "story-header-our": "Наша",
+    "story-header-story": "Історія",
+    "snippets": "Нарізки із Соцмереж...",
+    "refresh": "Оновити Вид"
+  },
+  "menu": {
+    "hero": "Меню",
+    "categories": "Категорії "
+  },
+  "reach-out": {
+    "hero": "Зв'язатися",
+    "form": {
+      "name": "Ім'я",
+      "phone": " Телефон",
+      "email": " Імейл",
+      "message": " Ваше Питання",
+      "submit": " надіслати"
+    },
+    "submitted": "Питання надіслано",
+    "required": "Обов'язкове поле",
+    "required-placeholder": "Заповніть обов'язкові поля",
+    "required-contact": "вкажіть один робочий метод зворотного зв'язку",
+    "required-contact-placeholder": "Вкажіть Телефон або Імейл"
+  },
+  "footer": {
+    "titles": {
+      "address": "Адреса",
+      "locations": "Локації",
+      "contact": "Швидкий Зв'язок",
+      "hours": "Години роботи"
+    },
+    "subtitles": {
+      "this": "Бі Рідж",
+      "downtown": "Центр",
+      "email": "Імейл",
+      "phone": "Телефонний Номер",
+      "downtown-link": "Вебсайт Центру",
+      "week-days": {
+        "monday": "Понеділок",
+        "tuesday": "Вівторок",
+        "wednesday": "Середа",
+        "thursday": "Четвер",
+        "friday": "П'ятниця",
+        "saturday": "Субота",
+        "sunday": "Неділя"
+      },
+      "special-days": {
+        "closed": "закрито"
+      }
+    }
+  }
+}
